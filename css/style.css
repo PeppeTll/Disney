@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 13px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(50deg, rgba(1,1,46,1) 0%, rgba(177,16,157,1) 50%, rgba(0,31,255,1) 100%);
+}
+
+.home-wrapper {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    width: 1800px;
+    height: 1000px;
+    box-shadow: 0px 10px 13px -7px #000000, 5px 7px 13px 6px rgba(0,0,0,0.76);
+    background-image: url(../img/scale.png);
+    background-size: cover;
+}
+
+main {
+    display: flex;
+    align-items: center;
+}
+
+main>div:first-child {
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    border-top-left-radius: 20px;
+    padding-bottom: 20px;
+    height: 920px;
+    min-width: calc(100% - 1200px);
+    background-image: url(../img/logo.grande.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+main .box_sx>div:first-child {
+    width: 500px;
+    height: 550px;
+}
+
+main>div:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    border-top-right-radius: 20px;
+    height: 920px;
+    min-width: calc(100% - 598px);
+}
+
+main .box_dx>div:first-child {
+    width: 1000px;
+    height: 600px;
+    position: relative;
+}
+
+.box_dx img {
+    position: absolute;
+    left: -40px;
+}
+
+body .foot-container {
+    width: 100%;
+    height: 80px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+
+
+
+
+/* debug */ 
+.debug .home-wrapper {
+    border: 1px solid;
+    border-color: aliceblue;
+}
+
+.debug .foot-container {
+    border: 1px solid;
+    border-color: aliceblue;
+}
+
+.debug main>div:first-child {
+    border: 1px solid;
+    border-color: aliceblue;
+}
+
+.debug main .box_sx>:first-child {
+    border: 1px solid;
+    border-color: aliceblue;
+}
+
+.debug main>div:last-child {
+    border: 1px solid;
+    border-color: aliceblue;
+}
+
+.debug main .box_dx>div:first-child {
+    border: 1px solid;
+    border-color: aliceblue;
+}
